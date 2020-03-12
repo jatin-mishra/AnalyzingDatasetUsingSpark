@@ -1,0 +1,18 @@
+		Analyzing DataSet For Using Spark
+
+1. Use retail_db dataset
+2. problem statement :
+	-	get daily revenue by producing considering completed and closed orders
+	-	data need to be sorted by ascending order by date and then descending order by revenue computer for each product for each day
+	-	data should be demilited by this order :
+		order_date , daily_revenue_pre_product , productname
+
+
+order and order_item is in hdfs
+products is in local file system
+
+final output need to be stored :
+1. Hdfs location avro format
+2. Hdfs text format
+3. local location
+4. store the solution at hdfs too
