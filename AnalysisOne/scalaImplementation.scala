@@ -32,8 +32,8 @@ val KeyValJoined = keyValOrder.join(keyValOrderItem)
 KeyValJoined.take(100).foreach(println)
 
 
-now we have : (orderId , ( orderDate , ( productId , subtotal ) ) )
-we want	is  : ((orderDate , productId) , subTotal )
+// now we have : (orderId , ( orderDate , ( productId , subtotal ) ) )
+// we want	is  : ((orderDate , productId) , subTotal )
 // get daily revenue per product Id
 val daily = KeyValJoined.map( k => ((k._2._1 , k._2._2._1) , k._2._2._2)) 
 val dailyRevenuePerProduct = daily.reduceByKey(_ + _ )
