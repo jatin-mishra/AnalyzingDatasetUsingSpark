@@ -1,0 +1,12 @@
+get department wise traffic every 30 seconds :
+	read data from retail_db logs
+	Compute department traffic every 20 seconds
+	Save the output to HDFS
+
+
+Solution:
+	use Sparkstreaming
+	publish messages from retail_db to netcat
+	create Dstream
+	Process and save the output
+
