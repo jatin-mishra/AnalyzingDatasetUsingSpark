@@ -45,6 +45,7 @@ object KafkaandSparkStreaming{
 
 
 /*
-    Always choose compatible vesions of jars like : here kafka version and spark-streaming-kafka version
+    1. Always choose compatible vesions of jars like : here kafka version , spark-streaming-kafka version and metric-core version
+    2. always pass these jars with spark-submit
 
 */
