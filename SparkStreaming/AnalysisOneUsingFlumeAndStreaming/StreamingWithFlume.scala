@@ -1,4 +1,4 @@
-import org.apache.spark.streaming._
+
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.{ StreamingContext , Seconds }
 import org.apache.spark.streaming.flume._
